@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pizzon</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.webp" type="image/webp" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="css/bootstrap-icons.css" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  <!-- Swiper  -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Owl carousel  -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- media -->
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body class="hide-scroll">
+  <a href="#" class="back">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- loader -->
+  <div id="preloader">
+    <label>Loading</label>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.webp" alt="logo" />
+        </a>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body justify-content-end">
+            <div>
+              <div class="collapse navbar-collapse show">
+                <ul class="nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Blog</a>
+                    <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdownMenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Blog Leftside</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Blog Rightside</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Blog detail</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Reservation</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Pages</a>
+                    <ul class="dropdown-menu rounded-0">
+                      <li>
+                        <a class="dropdown-item" href="#">About Us</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Contact</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Shop Grid</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">404</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-icon">
+          <ul class="d-flex">
+            <li>
+              <a href="tel:123456789"><i class="bi bi-telephone pe-2"></i>
+                <span>+91 123 456 789</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown cart">
+              <a class="nav-link mx-4" href="#" data-bs-toggle="dropdown"><i class="bi bi-handbag pe-2"></i>
+                <span>0 items - $0.00</span>
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li>
+                  <div class="row">
+                    <div class="col-4">
+                      <a class="" href="#">
+                        <img src="images/1.webp" alt="1" />
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <div class="cart-content position-relative">
+                        <a href="" class="mb-1 me-3">MARGHERITA PIZZA</a>
+                        <a href="javascript:void(0)" class="close-cart ps-2 pe-3 position-absolute"><i
+                            class="bi bi-x-circle-fill"></i></a>
+                        <p class="mb-2">$14.99</p>
+                        <div class="product-qty mb-2">
+                          <label>Qty:</label>
+                          <div class="custom-qty">
+                            <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty"
+                              disabled="" class="mb-4" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <hr />
+                    </div>
+                    <!-- 2nd  -->
+                    <div class="col-4">
+                      <a class="" href="#">
+                        <img src="images/2.webp" alt="2" />
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <div class="cart-content position-relative">
+                        <a href="" class="mb-1 me-3">GREEK PIZZA</a>
+                        <a href="javascript:void(0)" class="close-cart ps-2 pe-3 position-absolute"><i
+                            class="bi bi-x-circle-fill"></i></a>
+                        <p class="mb-2">$14.99</p>
+                        <div class="product-qty mb-2">
+                          <label>Qty:</label>
+                          <div class="custom-qty">
+                            <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty"
+                              disabled="" class="mb-4" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <hr />
+                    </div>
+                    <div class="col-6 pull-right fw-normal mb-4">
+                      <p>Cart Subtotal</p>
+                    </div>
+                    <div class="col-6 mb-4 pull-right justify-content-end">
+                      <p class="">$29.98</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="cart-btn">
+                        <a href="" class="btn btn-primary">CART</a>
+                      </div>
+                      <div class="cart-btn">
+                        <a href="" class="btn btn-primary">CHECKOUT</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="head-btn">
+          <a class="btn btn-primary" href="#">ORDER ONLINE</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- banner  -->
+    <section class="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="mdColumn d-flex align-items-center">
+                  <div
+                    class="col col-lg-7 col-xl-7 col-xxl-7 col-md-7 col-sm-12 order-md-first banner-1 position-relative">
+                    <img src="images/pizza-banner-2.webp" class="pt-4 banner-1-img" alt="pizza-banner-2" />
+                    <div class="banner-all-img">
+                      <img src="images/onion-2.webp" alt="onion-2" class="pizza-1 position-absolute" />
+                      <img src="images/onion.webp" alt="onion" class="pizza-2 position-absolute" />
+                      <img src="images/chilli-2.webp" alt="chilli-2" class="pizza-3 position-absolute" />
+                      <img src="images/chilli.webp" alt="chilli" class="pizza-4 position-absolute" />
+                      <img src="images/tomato.webp" alt="tomato" class="pizza-5 position-absolute" />
+                      <img src="images/green-patti-2.webp" alt="green-patti-2" class="pizza-6 position-absolute" />
+                    </div>
+                  </div>
+                  <div class="col col-lg-5 col-xl-5 col-xxl-5 col-md-5 col-sm-12 order-sm-first order-xs-first">
+                    <div class="banner-content">
+                      <h1>Quality F<span>oo</span>ds</h1>
+                      <p>Healthy Food for healthy body</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd slider  -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="mdColumn d-flex align-items-center">
+                  <div class="col-lg-5 col-xl-5 col-xxl-5 col-sm-12 col-md-5">
+                    <div class="banner-content">
+                      <h1>Quality F<span>oo</span>ds</h1>
+                      <p>Healthy Food for healthy body</p>
+                    </div>
+                  </div>
+                  <div class="col col-lg-7 col-xl-7 col-xxl-7 col-md-7 col-sm-12 banner-2 position-relative">
+                    <img src="images/pizza-banner-1.webp" class="pt-4 banner-2-img" alt="pizza-banner-1" />
+                    <div class="banner-all-img">
+                      <img src="images/green-tomato-2.webp" alt="green-tomato-2"
+                        class="pizza-7 position-absolute p-0 m-0" />
+                      <img src="images/green-patti.webp" alt="green-patti" class="pizza-8 position-absolute p-0 m-0" />
+                      <img src="images/onion-5.webp" alt="onion-5" class="pizza-9 position-absolute p-0 m-0" />
+                      <img src="images/onion-3.webp" alt="onion-3" class="pizza-10 position-absolute p-0 m-0" />
+                      <img src="images/green-tomato.webp" alt="onion-3" class="pizza-11 position-absolute p-0 m-0" />
+                      <img src="images/onion-4.webp" alt="onion-4" class="pizza-12 position-absolute p-0 m-0" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd slider  -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="col col-lg-12 col-xl-12 col-xxl-12 col-sm-12 banner-3 text-center">
+                    <div class="banner-content">
+                      <h1>Quality F<span>oo</span>ds</h1>
+                      <p>Healthy Food for healthy body</p>
+                    </div>
+                    <div class="col col-lg-12 col-xl-12 col-xxl-12 col-sm-12 position-relative">
+                      <img src="images/banner-bg-1.webp" alt="banner-bg-1" class="banner-bg-1 banner-3-img" />
+                      <div class="banner-all-img">
+                        <img src="images/banner-bg-2.webp" alt="banner-bg-2" class="pizza-13 position-absolute" />
+                        <img src="images/banner-bg-4.webp" alt="banner-bg-4" class="pizza-14 position-absolute" />
+                        <img src="images/banner-bg-3.webp" alt="banner-bg-3" class="pizza-15 position-absolute" />
+                        <img src="images/banner-bg-5.webp" alt="banner-bg-5" class="pizza-16 position-absolute" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- order  -->
+    <section class="py-100 order position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="order-top position-absolute">
+            <img src="images/order-top.webp" alt="order-top" />
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 order-box text-center">
+            <img src="images/order-1.svg" alt="order-1" />
+            <h2 class="text-uppercase fw-bold pt-2 pb-2 fs-2 mb-0">
+              ORDER YOUR FOOD
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              <br />do eius-Lorem ipsum dolor sit amet, consectetur
+              adipisicing<br />elit, sed do eius-Lorem ipsum dolor sit amet,
+              consectetur<br />adipisicing elit, sed do eius-
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 order-box text-center">
+            <img src="images/order-2.svg" alt="order-2" />
+            <h2 class="text-uppercase fw-bold pt-2 pb-2 fs-2 mb-0">
+              DELIVERY OR PICK UP
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              <br />do eius-Lorem ipsum dolor sit amet, consectetur
+              adipisicing<br />elit, sed do eius-Lorem ipsum dolor sit amet,
+              consectetur<br />adipisicing elit, sed do eius-
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 order-box last-box text-center">
+            <img src="images/order-3.svg" alt="order-3" />
+            <h2 class="text-uppercase fw-bold pt-2 pb-2 fs-2 mb-0">
+              DELICIOUS RECEIPE
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              <br />do eius-Lorem ipsum dolor sit amet, consectetur
+              adipisicing<br />elit, sed do eius-Lorem ipsum dolor sit amet,
+              consectetur<br />adipisicing elit, sed do eius-
+            </p>
+          </div>
+          <div class="order-bottom position-absolute">
+            <img src="images/order-bottom.webp" alt="order-bottom" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OUR SPECIALITY -->
+    <section class="py-100 mt-5 speciality">
+      <div class="container">
+        <div class="title text-center wow fadeInLeft">
+          <p class="pb-2 fs-2">Fresh From Pizzon</p>
+          <h2 class="display-2 fw-bold">OUR SPECIALITY</h2>
+        </div>
+        <div class="row pt-5">
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 speciality-box text-center">
+            <a href="#">
+              <img src="images/speciality-1.webp" alt="speciality-1" />
+            </a>
+            <div class="speciality-content">
+              <a href="#" class="text-uppercase fw-bold fs-4 d-inline-block mt-4">Mexican Green Wave</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 speciality-box text-center">
+            <a href="#">
+              <img src="images/speciality-2.webp" alt="speciality-2" />
+            </a>
+            <div class="speciality-content">
+              <a href="#" class="text-uppercase fw-bold fs-4 d-inline-block mt-4">Double Cheese Pizza</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 speciality-box text-center">
+            <a href="#">
+              <img src="images/speciality-3.webp" alt="speciality-3" />
+            </a>
+            <div class="speciality-content">
+              <a href="#" class="text-uppercase fw-bold fs-4 d-inline-block mt-4">margherita pizza</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+            <a href="" class="btn btn-second d-inline-block mt-5 fw-bold text-uppercase mt-4">VIEW MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu-bar  -->
+    <section class="py-100 special-menu">
+      <div class="container">
+        <div class="title text-center">
+          <p class="pb-2 fs-2">Fresh From Pizzon</p>
+          <h2 class="display-2 fw-bold text-white">OUR SPECIAL MENU</h2>
+        </div>
+        <div class="row">
+          <div class="menu-top">
+            <img src="images/menu-top-bg.webp" alt="menu-top" />
+          </div>
+          <!-- nav tabs  -->
+          <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 pt-5 menu-1 pb-4 text-center">
+            <div class="special-tabs">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                    type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                    ALL
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks"
+                    type="button" role="tab" aria-selected="false">
+                    DRINKS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-salads-tab" data-bs-toggle="pill" data-bs-target="#pills-salads"
+                    type="button" role="tab" aria-selected="false">
+                    SALADS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pasta-tab" data-bs-toggle="pill" data-bs-target="#pills-pasta"
+                    type="button" role="tab" aria-selected="false">
+                    PASTA
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-burgers-tab" data-bs-toggle="pill" data-bs-target="#pills-burgers"
+                    type="button" role="tab" aria-selected="false">
+                    BURGERS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-deserts-tab" data-bs-toggle="pill" data-bs-target="#pills-deserts"
+                    type="button" role="tab" aria-selected="false">
+                    DESERTS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pizzas-tab" data-bs-toggle="pill" data-bs-target="#pills-pizzas"
+                    type="button" aria-selected="false">
+                    PIZZAS
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content pt-5" id="pills-tabContent">
+            <div class="tab-pane fade show active text-center" id="pills-all">
+              <div class="row">
+                <div class="col-12 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-1.webp" alt="menu-1" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">margherita pizza</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-3.webp" alt="menu-3" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Rum With Soda</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-7.webp" alt="menu-7" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Ceaser Salad</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-8.webp" alt="menu-8" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Sea Food Pasta</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <!-- 2nd row  -->
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box mt-5 last-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-6.webp" alt="menu-6" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Chocolate Cookies</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box mt-5 last-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-2.webp" alt="menu-2" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Pepperoni Pizza</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box mt-5 last-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-7.webp" alt="menu-7" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">bismarck pizza</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box mt-5 last-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-1.webp" alt="menu-1" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Valdostana pizza</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-drinks">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-3.webp" alt="menu-3" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Rum With Soda</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-salads">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-7.webp" alt="menu-7" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Ceaser Salad</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-pasta">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-8.webp" alt="menu-8" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Sea Food Pasta</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-burgers">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-1.webp" alt="menu-1" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">VALDOSTANA PIZZA</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-2.webp" alt="menu-2" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">BISMARCK PIZZA</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-3.webp" alt="menu-3" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">PEPPERONI PIZZA</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-7.webp" alt="menu-7" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">ORIENTAL PIZZA</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box mt-5 last-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-8.webp" alt="menu-8" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">BARBECUE PIZZA</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-deserts">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-2.webp" alt="menu-2" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Chocolate Cookies</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-3.webp" alt="menu-3" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Rum With Soda</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-pizzas">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-4.webp" alt="menu-4" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Vegetarian</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-1.webp" alt="menu-1" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">margherita pizza</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-xl-3 col-xxl-3 menu-box">
+                  <div class="menu-img position-relative">
+                    <a href="#">
+                      <img src="images/menu-3.webp" alt="menu-3" />
+                    </a>
+                  </div>
+                  <a href="#" class="text-uppercase d-inline-block mt-4">Four Cheese</a>
+                  <p class="pb-2 pt-2">
+                    Lorem Ipsum is simply dummy text of the<br />printing and
+                    typesetting industry.
+                  </p>
+                  <span>$20.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-bottom">
+            <img src="images/menu-bottom-bg.webp" alt="menu-bottom" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- form -->
+    <section class="py-100 form">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="title">
+              <p class="pb-2 fs-2">Fresh From Pizzon</p>
+              <h2 class="display-2 fw-bold pb-1">BOOK ONLINE</h2>
+            </div>
+            <p class="pt-2 mb-1">
+              Sit amet, consectetur adipiscing elit quisque eget maximus
+              velit, non eleifend libero curabitur dapibus mauris sed leo
+              cursus aliquetcras suscipit. Sit amet, consectetur adipiscing
+              elit quisque eget maximus velit, non eleifend libero<br />
+              curabitur
+            </p>
+
+            <a href="tel:1234567890" class="online-call fw-bold d-inline-block mt-4 position-relative">+ 91 123 456 789
+              0</a>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="title">
+              <h3 class="fs-2 fw-bold pb-3 mb-1 text-center">BOOK A TABLE</h3>
+            </div>
+            <form class="online-order-form">
+              <div class="form-group">
+                <input type="text" class="form-control rounded-0" id="name" placeholder="Name" required="" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control rounded-0" id="email" placeholder="Email" required="" />
+              </div>
+              <div class="form-group">
+                <select class="form-select form-control rounded-0" aria-label="Default select example">
+                  <option value="0">How many persons?</option>
+                  <option value="1">Person 5</option>
+                  <option value="2">Person 4</option>
+                  <option value="3">Person 3</option>
+                </select>
+              </div>
+              <div class="form-group last-box">
+                <input type="text" class="form-control rounded-0" id="date" placeholder="Date" required="" />
+              </div>
+              <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                <button type="submit"
+                  class="btn btn-second fw-bold text-uppercase d-inline-block text-center btn-black">
+                  book now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHEF -->
+    <section class="py-100 chef position-relative overflow-hidden">
+      <div class="chef-top-bg position-absolute">
+        <img src="images/chef-top-bg.webp" alt="chef-top-bg" />
+      </div>
+      <div class="container">
+        <div class="title text-center">
+          <p class="pb-2 fs-2">Fresh From Pizzon</p>
+          <h2 class="display-2 fw-bold text-white">OUR SPECIALITY</h2>
+        </div>
+        <div class="row py-5 position-relative">
+          <!-- Swiper -->
+          <div class="swiper mySwiper text-center position-static">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-2.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-1.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-3.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-4.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-1.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="chef-bottom-bg position-absolute">
+        <img src="images/chef-bottom-bg.webp" alt="chef-bottom-bg" />
+      </div>
+    </section>
+    <!-- news -->
+    <section class="py-100 news">
+      <div class="container">
+        <div class="title text-center">
+          <p class="pb-2 fs-2">Recent Events</p>
+          <h2 class="display-2 fw-bold">LATEST NEWS</h2>
+        </div>
+        <div class="row pt-5">
+          <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="news-box">
+              <div class="news-img position-relative">
+                <a href="">
+                  <img src="images/news-1.webp" alt="news-1" class="w-100" />
+                </a>
+                <div
+                  class="news-date text-uppercase position-absolute fw-bold text-center pt-2 text-white rounded-circle">
+                  <span>15<br />june</span>
+                </div>
+              </div>
+              <ul class="pt-3 ps-0">
+                <li class="d-inline-block me-3">By - John Doe</li>
+                <li class="d-inline-block">0 Comments</li>
+              </ul>
+              <a href="" class="news-headline text-uppercase d-block fw-bold mb-1">Possession so comparison inquietude
+                he conviction</a>
+              <a href="" class="news-more text-uppercase text-decoration-underline mt-3 d-inline-block">Read More</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="news-box">
+              <div class="news-img position-relative">
+                <a href="">
+                  <img src="images/news-2.webp" alt="news-2" class="w-100" />
+                </a>
+                <div
+                  class="news-date text-uppercase position-absolute fw-bold text-center pt-2 text-white rounded-circle">
+                  <span>15<br />june</span>
+                </div>
+              </div>
+              <ul class="pt-3 ps-0">
+                <li class="d-inline-block me-3">By - John Doe</li>
+                <li class="d-inline-block">0 Comments</li>
+              </ul>
+              <a href="" class="news-headline text-uppercase d-block fw-bold mb-1">Possession so comparison inquietude
+                he conviction</a>
+              <a href="" class="news-more text-uppercase text-decoration-underline mt-3 d-inline-block">Read More</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="news-box">
+              <div class="news-img position-relative">
+                <a href="">
+                  <img src="images/news-3.webp" alt="news-3" class="w-100" />
+                </a>
+                <div
+                  class="news-date text-uppercase position-absolute fw-bold text-center pt-2 text-white rounded-circle">
+                  <span>15<br />june</span>
+                </div>
+              </div>
+              <ul class="pt-3 ps-0">
+                <li class="d-inline-block me-3">By - John Doe</li>
+                <li class="d-inline-block">0 Comments</li>
+              </ul>
+              <a href="" class="news-headline text-uppercase d-block fw-bold mb-1">Possession so comparison inquietude
+                he conviction</a>
+              <a href="" class="news-more text-uppercase text-decoration-underline mt-3 d-inline-block">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial -->
+    <section class="py-100 position-relative customer overflow-hidden">
+      <div class="customer-top-bg position-absolute">
+        <img src="images/customer-top-bg.webp" alt="customer-top-bg" class="w-100" />
+      </div>
+      <div class="container">
+        <div class="title text-center">
+          <p class="pb-2 fs-2">What Say Our Clients</p>
+          <h2 class="display-2 fw-bold text-white">CUSTOMER REVIEWS</h2>
+        </div>
+        <div class="row mt-5 align-items-center">
+          <div class="owl-carousel">
+            <div class="slider">
+              <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-lg-2 col-xl-2 col-xxl-2">
+                  <div class="customer-img">
+                    <img src="images/customer-1.webp" alt="customer-1" class="c-1" />
+                    <div class="col-12 col-sm-12">
+                      <a href="#" class="text-uppercase my-2 d-inline-block fs-5">John doe</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-10 col-xl-10 col-xxl-10">
+                  <div class="customer-review bg-white position-relative">
+                    <p class="fst-italic">
+                      The one day when the lady met this fellow and they knew
+                      it was much more than a hunch the first mate and his
+                      Skipper too will do their comforta The one day when the
+                      lady met this fellow and they knew it was much more than
+                      a hunch the first mate and his Skipper too will do their
+                      comforta The one day when the lady met this fellow and
+                      they knew it was much
+                    </p>
+                    <label class="post-name text-uppercase">john doe -
+                      <span class="text-lowercase">Designer</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-lg-2 col-xl-2 col-xxl-2">
+                  <div class="customer-img">
+                    <img src="images/customer-2.webp" alt="customer-1" class="c-1" />
+                    <div class="col-12 col-sm-12">
+                      <a href="#" class="text-uppercase my-2 d-inline-block fs-5">John doe</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-10 col-xl-10 col-xxl-10">
+                  <div class="customer-review bg-white position-relative">
+                    <p class="fst-italic">
+                      The one day when the lady met this fellow and they knew
+                      it was much more than a hunch the first mate and his
+                      Skipper too will do their comforta The one day when the
+                      lady met this fellow and they knew it was much more than
+                      a hunch the first mate and his Skipper too will do their
+                      comforta The one day when the lady met this fellow and
+                      they knew it was much
+                    </p>
+                    <label class="post-name text-uppercase">john doe -
+                      <span class="text-lowercase">Designer</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-lg-2 col-xl-2 col-xxl-2">
+                  <div class="customer-img">
+                    <img src="images/customer-3.webp" alt="customer-1" class="c-1" />
+                    <div class="col-12 col-sm-12">
+                      <a href="#" class="text-uppercase my-2 d-inline-block fs-5">John doe</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-10 col-xl-10 col-xxl-10">
+                  <div class="customer-review bg-white position-relative">
+                    <p class="fst-italic">
+                      The one day when the lady met this fellow and they knew
+                      it was much more than a hunch the first mate and his
+                      Skipper too will do their comforta The one day when the
+                      lady met this fellow and they knew it was much more than
+                      a hunch the first mate and his Skipper too will do their
+                      comforta The one day when the lady met this fellow and
+                      they knew it was much
+                    </p>
+                    <label class="post-name text-uppercase">john doe -
+                      <span class="text-lowercase">Designer</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customer-bottom-bg position-absolute">
+        <img src="images/customer-bottom-bg.webp" alt="customer-bottom-bg" class="w-100" />
+      </div>
+    </section>
+    <!-- about -->
+    <section class="py-100 about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="title">
+              <p class="pb-2 fs-2">Delicious Restaurant</p>
+              <h2 class="display-2 fw-bold">ABOUT PIZZON</h2>
+            </div>
+            <p class="pt-3 content">
+              Sit amet, consectetur adipiscing elit quisque eget maximus
+              velit, non eleifend libero curabitur dapibus mauris sed leo
+              cursus aliquetcras suscipit. Sit amet, consectetur adipiscing
+              elit quisque eget maximus velit, non eleifend libero curabitur
+              Sit amet, consectetur adipiscing elit quisque eget maximus
+              velit, non eleifend libero curabitur dapibus mauris sed leo
+              cursus aliquetcras suscipit. Sit amet, consectetur adipiscing
+              elit quisque eget maximus velit, non eleifend libero curabitur
+            </p>
+            <a href="#" class="btn btn-second d-inline-block mt-4 fw-bold text-uppercase">VIEW MORE</a>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="about-img">
+              <img src="images/about-pizzon.webp" alt="about-pizzon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box">
+          <a href="#">
+            <img src="images/footer-logo.webp" alt="footer-logo" class="foot-logo" />
+          </a>
+          <p class="footer-des text-white">
+            20 Carrochan Rd, Balloch, Alexandria G83 8EG, UK<br />69QJ+2F
+            Alexandria, United Kingdom
+          </p>
+          <ul class="list-unstyled text-white footer-logo">
+            <li>
+              Phone -
+              <a href="tel:1234567890" class="ps-1">+91 123 456 789 0</a>
+            </li>
+            <li>
+              Email -
+              <a href="mailto:info@gmail.com" class="ps-1 d-inline-block mt-2">info@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box text-white">
+          <h3 class="fs-5 text-uppercase fw-bold">OPENING HOURS</h3>
+          <ul class="list-unstyled text-white pt-5 opening-hours">
+            <li>
+              Mon - Tues :
+              <span>6.00 am - 10.00 pm</span>
+            </li>
+            <li>
+              Wednes - Thurs :
+              <span>6.00 am - 10.00 pm</span>
+            </li>
+            <li>
+              Launch:
+              <span>Everyday</span>
+            </li>
+            <li>
+              Sunday :
+              <span class="footer-close">Closed</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box text-white pb-5 last-box">
+          <h3 class="fs-5 text-uppercase fw-bold">USEFUL LINKS</h3>
+          <ul class="list-unstyled pt-5 footer-links">
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Order Tracking</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Warranty and Services</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">About</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Wishlist</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="foot-line m-0" />
+        <div class="copyright d-flex align-items-center">
+          <div class="col-12 col-sm-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <p class="copy-text">
+              © Pizzon all Rights Reserved. Designed by
+              <a href="#" target="_blank">Lavkush Varma</a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <ul class="foot-icon">
+              <li class="ps-2 d-inline-block">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </li>
+              <li class="ps-2 d-inline-block">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="ps-2 d-inline-block">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="ps-2 d-inline-block">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    // Preloader
+    $(window).on("load", function () {
+      $("#preloader").delay(1000).fadeOut();
+    });
+    function removerLoading() {
+      $("body").delay(1400).removeAttr("class");
+    }
+    setInterval(removerLoading, 1100);
+    $(".hide-scroll").on("load", function () {
+      $(this).delay(1100);
+    });
+  </script>
+  <!-- sticky header  -->
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 50) {
+        $("header").addClass("fix-header");
+      } else {
+        $("header").removeClass("fix-header");
+      }
+    });
+  </script>
+  <!-- swiper  -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    new WOW().init();
+  </script>
+  <!-- owl-carousel -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    });
+  </script>
+  <!-- back button  -->
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        $(".back").fadeIn("");
+      } else {
+        $(".back").fadeOut("");
+      }
+    });
+    $(".back").on("click", function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        200
+      );
+    });
+  </script>
+</body>
+
+</html>

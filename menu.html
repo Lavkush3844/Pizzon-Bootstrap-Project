@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Menu</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.webp" type="image/webp" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="css/bootstrap-icons.css" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  <!-- Swiper  -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Owl carousel  -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- media -->
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body class="hide-scroll">
+  <a href="#" class="back">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- loader -->
+  <div id="preloader">
+    <label>Loading</label>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.webp" alt="logo" />
+        </a>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body justify-content-end">
+            <div>
+              <div class="collapse navbar-collapse show">
+                <ul class="nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Blog</a>
+                    <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdownMenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Blog Leftside</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Blog Rightside</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Blog detail</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Reservation</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Pages</a>
+                    <ul class="dropdown-menu rounded-0">
+                      <li>
+                        <a class="dropdown-item" href="#">About Us</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Contact</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Shop Grid</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">404</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-icon">
+          <ul class="d-flex">
+            <li>
+              <a href="tel:123456789"><i class="bi bi-telephone pe-2"></i>
+                <span>+91 123 456 789</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown cart">
+              <a class="nav-link mx-4" href="#" data-bs-toggle="dropdown"><i class="bi bi-handbag pe-2"></i>
+                <span>0 items - $0.00</span>
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li>
+                  <div class="row">
+                    <div class="col-4">
+                      <a class="" href="#">
+                        <img src="images/1.webp" alt="1" />
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <div class="cart-content position-relative">
+                        <a href="" class="mb-1 me-3">MARGHERITA PIZZA</a>
+                        <a href="javascript:void(0)" class="close-cart ps-2 pe-3 position-absolute"><i
+                            class="bi bi-x-circle-fill"></i></a>
+                        <p class="mb-2">$14.99</p>
+                        <div class="product-qty mb-2">
+                          <label>Qty:</label>
+                          <div class="custom-qty">
+                            <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty"
+                              disabled="" class="mb-4" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <hr />
+                    </div>
+                    <!-- 2nd  -->
+                    <div class="col-4">
+                      <a class="" href="#">
+                        <img src="images/2.webp" alt="2" />
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <div class="cart-content position-relative">
+                        <a href="" class="mb-1 me-3">GREEK PIZZA</a>
+                        <a href="javascript:void(0)" class="close-cart ps-2 pe-3 position-absolute"><i
+                            class="bi bi-x-circle-fill"></i></a>
+                        <p class="mb-2">$14.99</p>
+                        <div class="product-qty mb-2">
+                          <label>Qty:</label>
+                          <div class="custom-qty">
+                            <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty"
+                              disabled="" class="mb-4" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <hr />
+                    </div>
+                    <div class="col-6 pull-right fw-normal mb-4">
+                      <p>Cart Subtotal</p>
+                    </div>
+                    <div class="col-6 mb-4 pull-right justify-content-end">
+                      <p class="">$29.98</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 cart-btn">
+                        <a href="" class="btn btn-primary">CART</a>
+                      </div>
+                      <div class="col-6 cart-btn">
+                        <a href="" class="btn btn-primary">CHECKOUT</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="head-btn d-lg-none d-xl-block">
+          <a class="btn btn-primary" href="#">ORDER ONLINE</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="position-relative page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title text-white text-center text-uppercase">
+              <h1 class="m-0">Food Menus</h1>
+              <ul class="p-0 text-capitalize">
+                <li class="d-inline-block position-relative">
+                  <a href="index.html" class="page-name">Home</a>
+                </li>
+                <li class="m d-inline-block position-relative">Menu 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu-bar  -->
+    <section class="py-100 menus">
+      <div class="container">
+        <div class="row">
+          <!-- nav tabs  -->
+          <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 menu-1 list-menu-1 pb-5 text-center">
+            <div class="menu-tabs">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                    type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                    ALL
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks"
+                    type="button" role="tab" aria-selected="false">
+                    DRINKS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-salads-tab" data-bs-toggle="pill" data-bs-target="#pills-salads"
+                    type="button" role="tab" aria-selected="false">
+                    SALADS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pasta-tab" data-bs-toggle="pill" data-bs-target="#pills-pasta"
+                    type="button" role="tab" aria-selected="false">
+                    PASTA
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-burgers-tab" data-bs-toggle="pill" data-bs-target="#pills-burgers"
+                    type="button" role="tab" aria-selected="false">
+                    BURGERS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-deserts-tab" data-bs-toggle="pill" data-bs-target="#pills-deserts"
+                    type="button" role="tab" aria-selected="false">
+                    DESERTS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pizzas-tab" data-bs-toggle="pill" data-bs-target="#pills-pizzas"
+                    type="button" aria-selected="false">
+                    PIZZAS
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active text-center" id="pills-all">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-1.jpg" alt="list-1" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">BARBECUE PIZZA</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-2.jpg" alt="list-2" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-3.jpg" alt="list-3" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CAESAR SALAD</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-4.jpg" alt="list-4" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">FETTUCINI</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <!-- 2nd row  -->
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-5.jpg" alt="list-5" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">GNOCCHI</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-6.jpg" alt="list-6" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">TRIPLE CROWN</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-7.jpg" alt="list-7" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">GREEK PIZZA</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-8.jpg" alt="list-8" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-9.jpg" alt="list-9" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-drinks">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-7.jpg" alt="list-7" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">GREEK PIZZA</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-salads">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-3.jpg" alt="list-3" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CAESAR SALAD</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-8.jpg" alt="list-8" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-pasta">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-5.jpg" alt="list-5" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">FETTUCINI</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-burgers">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-4.jpg" alt="list-4" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">FETTUCINI</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-8.jpg" alt="list-8" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-deserts">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-8.jpg" alt="list-8" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-9.jpg" alt="list-9" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade text-center" id="pills-pizzas">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-1.jpg" alt="list-1" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">BARBECUE PIZZA</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-2.jpg" alt="list-2" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box mb-3">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-6.jpg" alt="list-6" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">TRIPLE CROWN</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-7.jpg" alt="list-7" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">GREEK PIZZA</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-8.jpg" alt="list-8" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 list-box">
+                  <div class="list-img position-relative">
+                    <a href="#">
+                      <img src="images/list-9.jpg" alt="list-9" />
+                    </a>
+                  </div>
+                  <div class="list-details">
+                    <a href="#" class="text-uppercase pb-1 fs-5">CHICKEN BREAST</a>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                      <li class="d-inline-block position-relative">Chicken</li>
+                      <li class="d-inline-block position-relative">Olive Oil</li>
+                      <li class="d-inline-block position-relative">Salt</li>
+                    </ul>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                      alteration in some form, by injected humour, or
+                    </p>
+                    <a href="#" class="item-order fs-6 text-uppercase">order now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHEF -->
+    <section class="py-100 chef position-relative overflow-hidden">
+      <div class="chef-top-bg position-absolute">
+        <img src="images/chef-top-bg.webp" alt="chef-top-bg" />
+      </div>
+      <div class="container">
+        <div class="title text-center">
+          <p class="pb-2 fs-2">Meet our experts</p>
+          <h2 class="display-2 fw-bold text-white">OUR BEST CHEF</h2>
+        </div>
+        <div class="row py-5 position-relative">
+          <!-- Swiper -->
+          <div class="swiper mySwiper text-center position-static">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-2.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-1.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-3.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-4.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="chef-box">
+                  <div class="chef-hover position-relative overflow-hidden">
+                    <img src="images/chef-1.webp" alt="chef-2" />
+                    <p class="text-uppercase fw-bold fs-5">John Doe</p>
+                    <span class="d-inline-block pb-4">Sous Chef</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="chef-bottom-bg position-absolute">
+        <img src="images/chef-bottom-bg.webp" alt="chef-bottom-bg" />
+      </div>
+    </section>
+    <!-- form -->
+    <section class="py-100 form">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="title">
+              <p class="pb-2 fs-2">Fresh From Pizzon</p>
+              <h2 class="display-2 fw-bold pb-1">BOOK ONLINE</h2>
+            </div>
+            <p class="pt-2 mb-1">
+              Sit amet, consectetur adipiscing elit quisque eget maximus
+              velit, non eleifend libero curabitur dapibus mauris sed leo
+              cursus aliquetcras suscipit. Sit amet, consectetur adipiscing
+              elit quisque eget maximus velit, non eleifend libero<br />
+              curabitur
+            </p>
+
+            <a href="tel:1234567890" class="online-call fw-bold d-inline-block mt-4 position-relative">+ 91 123 456 789
+              0</a>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="title">
+              <h3 class="fs-2 fw-bold pb-3 mb-1 text-center">BOOK A TABLE</h3>
+            </div>
+            <form class="online-order-form">
+              <div class="form-group">
+                <input type="text" class="form-control rounded-0" id="name" placeholder="Name" required="" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control rounded-0" id="email" placeholder="Email" required="" />
+              </div>
+              <div class="form-group">
+                <select class="form-select form-control rounded-0" aria-label="Default select example">
+                  <option value="0">How many persons?</option>
+                  <option value="1">Person 5</option>
+                  <option value="2">Person 4</option>
+                  <option value="3">Person 3</option>
+                </select>
+              </div>
+              <div class="form-group last-box">
+                <input type="text" class="form-control rounded-0" id="date" placeholder="Date" required="" />
+              </div>
+              <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                <button type="submit"
+                  class="btn btn-second fw-bold text-uppercase d-inline-block text-center btn-black">
+                  book now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box">
+          <a href="#">
+            <img src="images/footer-logo.webp" alt="footer-logo" class="foot-logo">
+          </a>
+          <p class="footer-des text-white">20 Carrochan Rd, Balloch, Alexandria G83 8EG, UK<br>69QJ+2F
+            Alexandria, United Kingdom</p>
+          <ul class="list-unstyled text-white footer-logo">
+            <li>
+              Phone -
+              <a href="tel:1234567890" class="ps-1">+91 123 456 789 0</a>
+            </li>
+            <li>
+              Email -
+              <a href="mailto:info@gmail.com" class="ps-1 d-inline-block mt-2">info@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box text-white">
+          <h3 class="fs-5 text-uppercase fw-bold">OPENING HOURS</h3>
+          <ul class="list-unstyled text-white pt-5 opening-hours">
+            <li>Mon - Tues :
+              <span>6.00 am - 10.00 pm</span>
+            </li>
+            <li>Wednes - Thurs :
+              <span>6.00 am - 10.00 pm</span>
+            </li>
+            <li>Launch:
+              <span>Everyday</span>
+            </li>
+            <li>Sunday :
+              <span class="footer-close">Closed</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 footer-box text-white pb-5 last-box">
+          <h3 class="fs-5 text-uppercase fw-bold">USEFUL LINKS</h3>
+          <ul class="list-unstyled pt-5 footer-links">
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Order Tracking</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Warranty and Services</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">About</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="mt-1 d-inline-block">Wishlist</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="foot-line m-0" />
+        <div class="copyright d-flex align-items-center">
+          <div class="col-12 col-sm-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <p class="copy-text">© Pizzon all Rights Reserved. Designed by <a href="#" target="_blank">Lavkush Varma</a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <ul class="foot-icon">
+              <li class="ps-2 d-inline-block"><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+              <li class="ps-2 d-inline-block"><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li class="ps-2 d-inline-block"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li class="ps-2 d-inline-block"><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    // Preloader
+    $(window).on('load', function () {
+      $("#preloader").delay(1000).fadeOut();
+    }
+    );
+    function removerLoading() {
+      $("body").delay(1400).removeAttr("class");
+    }
+    setInterval(removerLoading, 1100);
+    $(".hide-scroll").on('load', function () {
+      $(this).delay(1100);
+    });
+  </script>
+
+  <!-- sticky header  -->
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 50) {
+        $("header").addClass("fix-header");
+      } else {
+        $("header").removeClass("fix-header");
+      }
+    });
+  </script>
+
+  <!-- back button  -->
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        $(".back").fadeIn("");
+      } else {
+        $(".back").fadeOut("");
+      }
+    });
+    $(".back").on("click", function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        200
+      );
+    });
+  </script>
+
+  <!-- swiper  -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
