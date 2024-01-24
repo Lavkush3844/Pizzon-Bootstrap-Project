@@ -1,7 +1,5 @@
 <h1>Bootstrap Project</h1>
 <h2>This Project is made using Bootstrap</h2>
-<br/>
-<br/>
 <h3>Screenshots :</h3>
 <br/>
 <br/>
