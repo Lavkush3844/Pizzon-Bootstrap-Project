@@ -1,6 +1,5 @@
 <h1>Pizzon Website</h1>
 <h2>This Project is made using Bootstrap</h2>
-<span>Dark Mode Included</span>
 <h3>Screenshots :</h3>
 <br/>
 <br/>
