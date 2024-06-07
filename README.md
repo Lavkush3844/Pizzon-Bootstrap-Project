@@ -1,5 +1,5 @@
 <h1>Pizzon Website</h1>
-<h2>This Project was made using Bootstrap</h2>
+<h2>This project is created using JavaScript</h2>
 <h3>Screenshots :</h3>
 <br/>
 <br/>
