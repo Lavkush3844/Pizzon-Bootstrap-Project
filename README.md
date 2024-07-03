@@ -1,4 +1,4 @@
-#  Braintech IT Solution
+#  Pizzon Store
 
 This website is created using html, css, bootstrap 5, Javascript, Media query. 
 
