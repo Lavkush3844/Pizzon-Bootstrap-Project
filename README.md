@@ -1,5 +1,17 @@
-<h1>Pizzon Website</h1>
-<h2>This project is created using Bootstrap</h2>
+#  Braintech IT Solution
+
+This website is created using html, css, bootstrap 5, Javascript, Media query. 
+
+## Features
+
+- Animation
+- Loader
+- Tabbing
+- Sliders
+- Dropdown Menu
+- Responsive
+- Lazy Load
+- Menu Page
 <h3>Screenshots :</h3>
 <br/>
 <br/>
